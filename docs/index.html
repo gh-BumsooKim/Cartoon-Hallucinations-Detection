@@ -1,218 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="description" content="Minecraft-ify Page">
-  <meta property="og:title" content="Minecraft-ify: Minecraft Style Image Generation with Text-guided Image Editing for In-Game Application"/>
-  <meta property="og:description" content="Minecraft-ify Page"/>
-  
-
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  
-  
-  <!-- Keywords for your paper to be indexed by-->
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cartoon Hallucinations Detection Project">
+  <meta property="og:title" content="Cartoon Hallucinations Detection"/>
+  <meta property="og:description" content="Pose-aware In Context Visual Learning for cartoon images"/>
   <title>Cartoon Hallucinations Detection</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
-
-  <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/index.css">
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script src="static/js/bulma-carousel.min.js"></script>
-  <script src="static/js/bulma-slider.min.js"></script>
-  <script src="static/js/index.js"></script>
 </head>
 <body>
 
-  <section class="hero">
+  <!-- Hero Section -->
+  <section class="hero is-dark">
     <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title"> Cartoon Hallucinations Detection: Pose-aware In Context Visual Learning</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=JlNb4R8AAAAJ" target="_blank">Bumsoo Kim</a><sup>1*</sup>,</span>
-              <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=gVAxCO0AAAAJ" target="_blank">Wonseop Shin</a><sup>1*</sup>,</span>
-              <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=jXiLuh8AAAAJ" target="_blank">Kyuchul Lee</a><sup>2&Dagger;</sup>,</span>
-              <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=E-BJvbsAAAAJ" target="_blank">Younghoon Jung</a><sup>1</sup>,</span>  
-              <span class="author-block">
-                <a href="http://grlab.cau.ac.kr/" target="_blank">Sanghyun Seo</a><sup>1&dagger;</sup></span>
-            </div>
-              <div class="is-size-5 publication-authors">
-                <span class="author-block">
-                  <sup>1</sup>Chung-Ang University, South Korea<br>
-                  <sup>2</sup>Coupang, South Korea<br>
-                  arXiv</span>
-                <span class="eql-cntrb"><small><br><sup>*</sup>Equal contribution</small></span>
-                <span class="eql-cntrb"><small><br><sup>&Dagger;</sup>Project Leader</small></span>
-                <span class="eql-cntrb"><small><br><sup>&dagger;</sup>Corresponding author</small></span>
-              </div>
-
-              <div class="column has-text-centered">
-                <div class="publication-links">
-                      
-              <!-- ArXiv abstract Link -->
-              <span class="link-block">
-                <a href="https://arxiv.org/abs/2403.15048" target="_blank"
-                class="external-link button is-normal is-rounded is-dark">
-                <span class="icon">
-                  <i class="ai ai-arxiv"></i>
-                </span>
-                <span>arXiv (2403.15048)</span> 
-                </a>
-              </span>
-                      
-              <!-- Arxiv PDF link -->
-              <span class="link-block">
-                <a href="https://arxiv.org/pdf/2403.15048.pdf" target="_blank"
-                class="external-link button is-normal is-rounded is-dark">
-                <span class="icon">
-                  <i class="fas fa-file-pdf"></i>
-                </span>
-                <span>Paper</span>
-                </a>
-              </span>
-
-              <!-- Github link -->
-              <!-- <span class="link-block">
-                <a href="https://github.com/gh-BumsooKim/Cartoon-Hallucinations-Detection" target="_blank"
-                class="external-link button is-normal is-rounded is-dark">
-                <span class="icon">
-                  <i class="fab fa-github"></i>
-                </span>
-                <span>Code (Soon)</span>
-                </a>
-              </span> -->
-              
-              <!-- Demo link -->
-              <span class="link-block">
-                <a href="https://chatgpt.com/g/g-shNHYX7UV-hallucination-detector-correct-or-hallucination " target="_blank"
-                class="external-link button is-normal is-rounded is-dark">
-                <span class="icon">
-                  <i class="fa fa-play" aria-hidden="true"></i>
-                </span>
-                <span>Demo (GPT-4 Vision)</span>
-                </a>
-              </span>
-
-              <!-- Dataset link -->
-              <span class="link-block">
-                <a href="https://huggingface.co/datasets/Wseop/PA-ICVL-DataSet" target="_blank"
-                class="external-link button is-normal is-rounded is-dark">
-                <span class="icon">
-                  <i class="fa fa-database" aria-hidden="true"></i>
-                </span>
-                <span>Cartoon-Hallucination Dataset (30M)</span>
-                </a>
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <!-- Your video here -->
-        <img src="static/images/pipeline.png">
-        <h2 class="subtitle has-text-centered">
-        TLDR; We propose a visual hallucination detection scheme using in-context visual learning with pose guidance.        </h2>
-
-        
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Leveraging large-scale Text-to-Image (TTI) models have become a common technique for generating exemplar or training dataset in the fields of image synthesis, video editing, 3D reconstruction. However, semantic structural visual hallucinations involving perceptually severe defects remain a concern, especially in the domain of non-photorealistic rendering (NPR) such as cartoons and pixelization-style character. To detect these hallucinations in NPR, We propose a novel semantic structural hallucination detection system using Vision-Language Model (VLM). Our approach is to leverage the emerging capability of large language model, in-context learning which denotes that VLM has seen some examples by user for specific downstream task, here hallucination detection. Based on in-context learning, we introduce pose-aware in-context visual learning (PA-ICVL) which improve the overall performance of VLM by further inputting visual data beyond prompts, RGB images and pose information. By incorporating pose guidance, we enable VLMs to make more accurate decisions. Experimental results demonstrate significant improvements in identifying visual hallucinations compared to baseline methods relying solely on RGB images. Within selected two VLMs, GPT-4v, Gemini pro vision, our proposed PA-ICVL improves the hallucination detection with 50\% to 78\%, 57\% to 80\%, respectively. This research advances a capability of TTI models toward real-world applications by mitigating visual hallucinations via in-context visual learning, expanding their potential in non-photorealistic domains. In addition, it showcase how users can boost the downstream-specialized capability of open VLM by harnessing additional conditions. We collect synthetic cartoon-hallucination dataset with TTI models, this dataset and final tuned VLM will be publicly available.</a>
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
-
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">How to detect</h2>
-      <img src="static/images/overview.jpg">
+      <div class="container has-text-centered">
+        <h1 class="title">Cartoon Hallucinations Detection</h1>
+        <p class="subtitle">Pose-aware In Context Visual Learning</p>
+        <p>Using in-context visual learning with pose guidance to detect hallucinations in cartoon character images.</p>
       </div>
     </div>
   </section>
 
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>@article{kim2024cartoon,
-        title={Cartoon Hallucinations Detection: Pose-aware In Context Visual Learning},
-        author={Kim, Bumsoo and Shin, Wonseop and Lee, Kyuchul and Seo, Sanghyun},
-        journal={arXiv preprint arXiv:2403.15048},
-        year={2024}
-        }</code></pre>
+  <!-- Authors Section -->
+  <section class="section">
+    <div class="container has-text-centered">
+      <h2 class="title is-3">Authors</h2>
+      <p>
+        <a href="https://scholar.google.com/citations?user=JlNb4R8AAAAJ" target="_blank">Bumsoo Kim</a><sup>1*</sup>,
+        <a href="https://scholar.google.com/citations?user=gVAxCO0AAAAJ" target="_blank">Wonseop Shin</a><sup>1*</sup>,
+        <a href="https://scholar.google.com/citations?user=jXiLuh8AAAAJ" target="_blank">Kyuchul Lee</a><sup>2&Dagger;</sup>,
+        <a href="https://scholar.google.com/citations?user=E-BJvbsAAAAJ" target="_blank">Younghoon Jung</a><sup>1</sup>,
+        <a href="http://grlab.cau.ac.kr/" target="_blank">Sanghyun Seo</a><sup>1&dagger;</sup>
+      </p>
+      <p><small><sup>1</sup>Chung-Ang University, South Korea &nbsp;&nbsp;|&nbsp;&nbsp; <sup>2</sup>Coupang, South Korea</small></p>
+      <p><small><sup>*</sup>Equal contribution&nbsp;&nbsp;&nbsp; <sup>&Dagger;</sup>Project Leader &nbsp;&nbsp;&nbsp; <sup>&dagger;</sup>Corresponding author</small></p>
     </div>
-</section>
-<!--End BibTex citation -->
+  </section>
 
-
-  <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
-        </div>
+  <!-- Links Section -->
+  <section class="section">
+    <div class="container has-text-centered">
+      <h2 class="title is-3">Project Links</h2>
+      <div class="buttons is-centered">
+        <a href="https://arxiv.org/abs/2403.15048" class="button is-link is-rounded">ArXiv (2403.15048)</a>
+        <a href="https://arxiv.org/pdf/2403.15048.pdf" class="button is-primary is-rounded">Download Paper</a>
+        <a href="https://github.com/gh-BumsooKim/Cartoon-Hallucinations-Detection" class="button is-dark is-rounded">GitHub Repository</a>
+        <a href="https://chatgpt.com/g/g-shNHYX7UV-hallucination-detector-correct-or-hallucination" class="button is-info is-rounded">Demo (GPT-4 Vision)</a>
+        <a href="https://huggingface.co/datasets/Wseop/PA-ICVL-DataSet" class="button is-success is-rounded">Cartoon-Hallucination Dataset</a>
       </div>
     </div>
-  </div>
-</footer>
+  </section>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+  <!-- Teaser Image Section -->
+  <section class="section">
+    <div class="container has-text-centered">
+      <h2 class="title is-3">Project Overview</h2>
+      <figure class="image is-4by3">
+        <img src="static/images/pipeline.png" alt="Pipeline Overview">
+      </figure>
+      <p class="subtitle">We propose a visual hallucination detection scheme using in-context visual learning with pose guidance.</p>
+    </div>
+  </section>
 
-    <!-- End of Statcounter Code -->
+  <!-- Abstract Section -->
+  <section class="section">
+    <div class="container">
+      <h2 class="title is-3 has-text-centered">Abstract</h2>
+      <div class="content">
+        <p>
+          Leveraging large-scale Text-to-Image (TTI) models has become common for generating exemplar or training datasets in generative fields. However, visual hallucinations with perceptually severe defects remain a concern, especially in non-photorealistic styles like cartoons. We propose a detection system using Vision-Language Models (VLM) for hallucination detection in NPR. Our system, pose-aware in-context visual learning (PA-ICVL), enhances VLM decision-making with pose guidance, significantly improving hallucination detection accuracy. By mitigating hallucinations, this research advances TTI models’ applicability in non-photorealistic domains.
+        </p>
+      </div>
+    </div>
+  </section>
 
-  </body>
-  </html>
+  <!-- How to Detect Section -->
+  <section class="section">
+    <div class="container has-text-centered">
+      <h2 class="title is-3">How to Detect</h2>
+      <figure class="image">
+        <img src="static/images/overview.jpg" alt="Detection Overview">
+      </figure>
+    </div>
+  </section>
+
+  <!-- BibTex Section -->
+  <section class="section">
+    <div class="container">
+      <h2 class="title is-3 has-text-centered">BibTeX</h2>
+      <pre><code>@article{kim2024cartoon,
+  title={Cartoon Hallucinations Detection: Pose-aware In Context Visual Learning},
+  author={Kim, Bumsoo and Shin, Wonseop and Lee, Kyuchul and Seo, Sanghyun},
+  journal={arXiv preprint arXiv:2403.15048},
+  year={2024}
+}</code></pre>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>. Adapted from <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page. Licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+    </div>
+  </footer>
+</body>
+</html>
