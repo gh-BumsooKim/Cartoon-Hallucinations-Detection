@@ -16,7 +16,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Cartoon Hallucinations Detection</title>
+  <title>Make VLM Recognize Visual Hallucination on Cartoon Character Image with Pose Information</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -43,7 +43,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title"> Cartoon Hallucinations Detection: Pose-aware In Context Visual Learning</h1>
+            <h1 class="title is-2 publication-title"> Make VLM Recognize Visual Hallucination on Cartoon Character Image with Pose Information</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
@@ -61,7 +61,7 @@
                 <span class="author-block">
                   <sup>1</sup>Chung-Ang University, South Korea<br>
                   <sup>2</sup>Coupang, South Korea<br>
-                  arXiv</span>
+                  WACV 2025</span>
                 <span class="eql-cntrb"><small><br><sup>*</sup>Equal contribution</small></span>
                 <span class="eql-cntrb"><small><br><sup>&Dagger;</sup>Project Leader</small></span>
                 <span class="eql-cntrb"><small><br><sup>&dagger;</sup>Corresponding author</small></span>
@@ -73,22 +73,22 @@
               <!-- ArXiv abstract Link -->
               <span class="link-block">
                 <a href="https://arxiv.org/abs/2403.15048" target="_blank"
-                class="external-link button is-normal is-rounded is-dark">
+                class="button is-link is-dark">
                 <span class="icon">
                   <i class="ai ai-arxiv"></i>
                 </span>
-                <span>arXiv (2403.15048)</span> 
+                <span>arXiv</span> 
                 </a>
               </span>
                       
               <!-- Arxiv PDF link -->
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/2403.15048.pdf" target="_blank"
+                <a href="https://openaccess.thecvf.com/content/WACV2025/html/Kim_Make_VLM_Recognize_Visual_Hallucination_on_Cartoon_Character_Image_with_WACV_2025_paper.html" target="_blank"
                 class="button is-link is-dark">
                 <span class="icon">
-                  <i class="fas fa-file-pdf"></i>
+                  <i class="fa fa-file-pdf"></i>
                 </span>
-                <span>Paper</span>
+                <span>Paper (WACV'25)</span>
                 </a>
               </span>
 
@@ -106,7 +106,7 @@
               <!-- Demo link -->
               <span class="link-block">
                 <a href="https://chatgpt.com/g/g-shNHYX7UV-hallucination-detector-correct-or-hallucination " target="_blank"
-                class="external-link button is-normal is-rounded is-dark">
+                class="button is-link is-dark">
                 <span class="icon">
                   <i class="fa fa-play" aria-hidden="true"></i>
                 </span>
@@ -117,11 +117,22 @@
               <!-- Dataset link -->
               <span class="link-block">
                 <a href="https://huggingface.co/datasets/Wseop/PA-ICVL-DataSet" target="_blank"
-                class="external-link button is-normal is-rounded is-dark">
+                class="button is-link is-dark">
                 <span class="icon">
                   <i class="fa fa-database" aria-hidden="true"></i>
                 </span>
                 <span>Cartoon-Hallucination Dataset (30M)</span>
+                </a>
+              </span>
+
+              <!-- Poster link -->
+              <span class="link-block">
+                <a href="https://drive.google.com/file/d/1aiq-JKWZ3A-t2-gzFV4nTVYcvbH-rZiY/view?usp=sharing" target="_blank"
+                class="button is-link is-dark">
+                <span class="icon">
+                  <i class="fa fa-file" aria-hidden="true"></i>
+                </span>
+                <span>Poster</span>
                 </a>
               </span>
             </div>
@@ -156,7 +167,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Leveraging large-scale Text-to-Image (TTI) models have become a common technique for generating exemplar or training dataset in the fields of image synthesis, video editing, 3D reconstruction. However, semantic structural visual hallucinations involving perceptually severe defects remain a concern, especially in the domain of non-photorealistic rendering (NPR) such as cartoons and pixelization-style character. To detect these hallucinations in NPR, We propose a novel semantic structural hallucination detection system using Vision-Language Model (VLM). Our approach is to leverage the emerging capability of large language model, in-context learning which denotes that VLM has seen some examples by user for specific downstream task, here hallucination detection. Based on in-context learning, we introduce pose-aware in-context visual learning (PA-ICVL) which improve the overall performance of VLM by further inputting visual data beyond prompts, RGB images and pose information. By incorporating pose guidance, we enable VLMs to make more accurate decisions. Experimental results demonstrate significant improvements in identifying visual hallucinations compared to baseline methods relying solely on RGB images. Within selected two VLMs, GPT-4v, Gemini pro vision, our proposed PA-ICVL improves the hallucination detection with 50\% to 78\%, 57\% to 80\%, respectively. This research advances a capability of TTI models toward real-world applications by mitigating visual hallucinations via in-context visual learning, expanding their potential in non-photorealistic domains. In addition, it showcase how users can boost the downstream-specialized capability of open VLM by harnessing additional conditions. We collect synthetic cartoon-hallucination dataset with TTI models, this dataset and final tuned VLM will be publicly available.</a>
+            Leveraging large-scale Text-to-Image (TTI) models have become a common technique for generating exemplar or training dataset in the fields of image synthesis, video editing, 3D reconstruction. However, semantic structural visual hallucinations involving perceptually severe defects remain a concern, especially in the domain of non-photorealistic rendering (NPR) such as cartoons and pixelization-style character. To detect these hallucinations in NPR, We propose a novel semantic structural hallucination detection system using Vision-Language Model (VLM). Our approach is to leverage the emerging capability of large language model, in-context learning which denotes that VLM has seen some examples by user for specific downstream task, here hallucination detection. Based on in-context learning, we introduce pose-aware in-context visual learning (PA-ICVL) which improve the overall performance of VLM by further inputting visual data beyond prompts, RGB images and pose information. By incorporating pose guidance, we enable VLMs to make more accurate decisions. Experimental results demonstrate significant improvements in identifying visual hallucinations compared to baseline methods relying solely on RGB images. Within selected two VLMs, GPT-4v, Gemini pro vision, our proposed PA-ICVL improves the hallucination detection with 50\% to 78\%, 57\% to 80\%, respectively. This research advances a capability of TTI models toward real-world applications by mitigating visual hallucinations via in-context visual learning, expanding their potential in non-photorealistic domains. In addition, it showcase how users can boost the downstream-specialized capability of open VLM by harnessing additional conditions. </a>
           </p>
         </div>
       </div>
@@ -178,13 +189,15 @@
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>@article{kim2024cartoon,
-        title={Cartoon Hallucinations Detection: Pose-aware In Context Visual Learning},
-        author={Kim, Bumsoo and Shin, Wonseop and Lee, Kyuchul and Seo, Sanghyun},
-        journal={arXiv preprint arXiv:2403.15048},
-        year={2024}
-        }</code></pre>
+      <h2 class="title">bibTeX</h2>
+      <pre><code>@InProceedings{Kim_2025_WACV,
+        author    = {Kim, Bumsoo and Shin, Wonseop and Lee, Kyuchul and Jung, Yonghoon and Seo, Sanghyun},
+        title     = {Make VLM Recognize Visual Hallucination on Cartoon Character Image with Pose Information},
+        booktitle = {Proceedings of the Winter Conference on Applications of Computer Vision (WACV)},
+        month     = {February},
+        year      = {2025},
+        pages     = {5398-5407}
+}</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
