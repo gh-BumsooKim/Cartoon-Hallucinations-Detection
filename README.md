@@ -24,7 +24,7 @@ IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) 2025
 
 ## bibtex
 
-```
+```bib
 @InProceedings{Kim_2025_WACV,
     author    = {Kim, Bumsoo and Shin, Wonseop and Lee, Kyuchul and Jung, Yonghoon and Seo, Sanghyun},
     title     = {Make VLM Recognize Visual Hallucination on Cartoon Character Image with Pose Information},
